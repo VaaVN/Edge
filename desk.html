@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ГРАНЬ | Испытание №1</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="memory-page">
+    <div class="background-grid"></div>
+    <div class="background-noise"></div>
+
+    <header>
+      <div class="logo">
+        <h2>ГРАНЬ</h2>
+      </div>
+
+      <div class="desk-status">Испытание №1 · Проверка памяти</div>
+    </header>
+
+    <main class="memory-container">
+      <span class="memory-label"> ПРОТОКОЛ Δ-01 </span>
+
+      <h1>Проверка кратковременной памяти</h1>
+
+      <p>
+        Система покажет последовательность активации модулей. Повторите её без
+        ошибок.
+      </p>
+
+      <div id="roundText">Раунд 1 из 3</div>
+
+      <div id="memoryGrid">
+        <div class="memoryTile" data-id="0"></div>
+        <div class="memoryTile" data-id="1"></div>
+        <div class="memoryTile" data-id="2"></div>
+
+        <div class="memoryTile" data-id="3"></div>
+        <div class="memoryTile" data-id="4"></div>
+        <div class="memoryTile" data-id="5"></div>
+
+        <div class="memoryTile" data-id="6"></div>
+        <div class="memoryTile" data-id="7"></div>
+        <div class="memoryTile" data-id="8"></div>
+      </div>
+
+      <button id="startButton">Начать испытание</button>
+    </main>
+
+    <!-- Победа -->
+
+    <div id="successModal">
+      <div class="modal-window">
+        <span class="modal-label"> Испытание завершено </span>
+
+        <h2>Доступ подтверждён</h2>
+
+        <p>
+          Проверка памяти успешно завершена.
+
+          <br /><br />
+
+          Открывается следующий сектор комплекса.
+        </p>
+
+        <button id="continueButton">Перейти далее</button>
+      </div>
+    </div>
+
+    <!-- Проигрыш -->
+
+    <div id="failModal">
+      <div class="modal-window">
+        <span class="modal-label"> Ошибка </span>
+
+        <h2>Последовательность нарушена</h2>
+
+        <p>Испытание будет перезапущено.</p>
+
+        <button id="restartButton">Попробовать снова</button>
+      </div>
+    </div>
+
+    <audio id="beepSound">
+      <source src="assets/audio/bip.mp3" />
+    </audio>
+
+    <audio id="successSound">
+      <source src="assets/audio/succes.mp3" />
+    </audio>
+
+    <audio id="errorSound">
+      <source src="assets/audio/error.mp3" />
+    </audio>
+
+    <script src="js/desk.js"></script>
+  </body>
+</html>

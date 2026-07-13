@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ГРАНЬ | Межпространственная Организация</title>
+
+    <meta
+      name="description"
+      content="Официальный портал организации ГРАНЬ. Контроль, исследование и защита межпространственных границ."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= ЗАГРУЗКА ================= -->
+
+    <div id="loader">
+      <div class="loader-logo">
+        <h1>ГРАНЬ</h1>
+
+        <p>Межпространственная организация</p>
+      </div>
+
+      <div class="loader-progress">
+        <div id="loaderBar"></div>
+      </div>
+
+      <p id="loaderText">Инициализация системы...</p>
+    </div>
+
+    <!-- ================= ОСНОВНОЙ САЙТ ================= -->
+
+    <main id="mainSite">
+      <!-- Фон -->
+
+      <div class="background-grid"></div>
+      <div class="background-noise"></div>
+
+      <!-- ================= HEADER ================= -->
+
+      <header>
+        <div class="logo">
+          <h2>ГРАНЬ</h2>
+        </div>
+
+        <nav>
+          <a href="#about">О компании</a>
+
+          <a href="#team">Сотрудники</a>
+
+          <a href="#subscribe">Подписка</a>
+        </nav>
+      </header>
+
+      <!-- ================= HERO ================= -->
+
+      <section class="hero">
+        <div class="hero-content">
+          <span class="status"> ● Система активна </span>
+
+          <h1>
+            Межпространственная организация
+
+            <span>ГРАНЬ</span>
+          </h1>
+
+          <p>
+            Мы существуем вне государственных структур. Мы не вмешиваемся в
+            историю миров. Мы защищаем границы между ними.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= О КОМПАНИИ ================= -->
+
+      <section id="about">
+        <div class="section-title">
+          <span>01</span>
+
+          <h2>О компании</h2>
+        </div>
+
+        <div class="card">
+          <h3>Кто мы?</h3>
+
+          <p>
+            Организация «ГРАНЬ» занимается обнаружением, исследованием и
+            локализацией межпространственных аномалий.
+          </p>
+
+          <p>
+            За последние десятилетия было зарегистрировано более 470
+            подтверждённых разрывов между независимыми игровыми реальностями.
+          </p>
+
+          <p>
+            Основная задача организации — предотвращение неконтролируемого
+            взаимодействия миров и сохранение стабильности мультивселенной.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="info-card">
+            <h4>Основание</h4>
+
+            <p>Засекречено</p>
+          </div>
+
+          <div class="info-card">
+            <h4>Статус</h4>
+
+            <p>Активна</p>
+          </div>
+
+          <div class="info-card">
+            <h4>Объектов под наблюдением</h4>
+
+            <p>127</p>
+          </div>
+
+          <div class="info-card">
+            <h4>Подтверждённых вторжений</h4>
+
+            <p>19</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= СОТРУДНИКИ ================= -->
+
+      <section id="team">
+        <div class="section-title">
+          <span>02</span>
+
+          <h2>Ключевые сотрудники</h2>
+        </div>
+
+        <div class="team-grid">
+          <div class="employee">
+            <div class="avatar"></div>
+
+            <h3>Доктор Элиас Мор</h3>
+
+            <p>
+              Руководитель исследовательского отдела. Специализация —
+              пространственные разломы.
+            </p>
+          </div>
+
+          <div class="employee">
+            <div class="avatar"></div>
+
+            <h3>Майя Ортис</h3>
+
+            <p>Аналитик мультивселенной. Координация экспедиций.</p>
+          </div>
+
+          <div class="employee">
+            <div class="avatar"></div>
+
+            <h3>Агент "Кестрел"</h3>
+
+            <p>Старший оперативник. Доступ к материалам уровня Ω.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ПОДПИСКА ================= -->
+
+      <section id="subscribe">
+        <div class="subscribe-box">
+          <span> ЕЖЕМЕСЯЧНЫЙ ОТЧЁТ </span>
+
+          <h2>Подпишитесь на закрытую рассылку организации</h2>
+
+          <p>
+            Получайте уведомления о новых исследованиях, обнаруженных аномалиях
+            и отчётах экспедиций.
+          </p>
+
+          <form id="subscribeForm">
+            <input
+              id="emailInput"
+              type="email"
+              placeholder="Введите электронную почту"
+              autocomplete="off"
+              required
+            />
+
+            <button type="submit">Подписаться</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= МОДАЛЬНОЕ ОКНО ================= -->
+
+    <div id="candidateModal">
+      <div class="modal-window">
+        <span class="modal-label"> Проверка личности </span>
+
+        <h2>Совпадение найдено</h2>
+
+        <p id="candidateText">...</p>
+
+        <div class="modal-buttons">
+          <button id="acceptButton">Принять приглашение</button>
+
+          <button id="declineButton">Отказаться</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= АУДИО ================= -->
+
+    <audio id="ambience" loop>
+      <source src="assets/audio/ambience.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="clickSound">
+      <source src="assets/audio/click.wav" type="audio/wav" />
+    </audio>
+
+    <audio id="successSound">
+      <source src="assets/audio/success.wav" type="audio/wav" />
+    </audio>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

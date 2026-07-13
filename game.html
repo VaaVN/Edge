@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ГРАНЬ | Карманное измерение</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="game-page">
+    <div class="background-grid"></div>
+    <div class="background-noise"></div>
+
+    <header>
+      <div class="logo">
+        <h2>ГРАНЬ</h2>
+      </div>
+
+      <div class="desk-status">Карманное измерение Δ-01</div>
+    </header>
+
+    <main class="game-container">
+      <div class="game-header">
+        <span> ДОСТУП ПОДТВЕРЖДЁН </span>
+
+        <h1>Вход в карманное измерение</h1>
+
+        <p>Пространственный шлюз активирован. Запускается виртуальная среда.</p>
+      </div>
+
+      <!-- =========================
+            UNITY ИГРА
+    ========================== -->
+
+      <div id="unity-container">
+        <canvas id="unity-canvas"></canvas>
+      </div>
+    </main>
+
+    <script src="UnityGame/Build/game.loader.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
