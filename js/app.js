@@ -3,7 +3,7 @@
     app.js
 ===================================================== */
 
-const CORRECT_EMAIL = "artem@gmail.com";
+const CORRECT_EMAIL = "chetergamer222@yandex.ru";
 
 const loader = document.getElementById("loader");
 const loaderBar = document.getElementById("loaderBar");
